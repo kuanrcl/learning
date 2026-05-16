@@ -1,0 +1,1204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hokkien Starter: Day-to-Day Conversation With Vocal Cues</title>
+  <script type="application/json" id="learning-metadata">
+  {
+    "title": "Hokkien Starter: Day-to-Day Conversation With Vocal Cues",
+    "version": "1.0",
+    "audience": "English/Malay-speaking beginner who wants practical day-to-day Hokkien",
+    "tags": ["hokkien", "penang-hokkien", "singapore-hokkien", "conversation", "pronunciation", "vocal-cues", "language"],
+    "sections": [
+      "five-w-one-h",
+      "dialect-scope",
+      "first-principles",
+      "vocal-cue-system",
+      "conversation-block-diagram",
+      "pronunciation-sequence",
+      "core-survival-phrases",
+      "food-and-shopping",
+      "directions-and-help",
+      "conversation-repair",
+      "grammar-patterns",
+      "practice-dialogues",
+      "daily-practice-plan",
+      "drill-lab",
+      "assembly-notes",
+      "sources"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #5f6b7a;
+      --line: #dce3ee;
+      --accent: #2563eb;
+      --accent-soft: #eaf1ff;
+      --teal: #0f766e;
+      --teal-soft: #e7f7f4;
+      --amber: #a16207;
+      --amber-soft: #fff4d7;
+      --red: #b42318;
+      --red-soft: #fff0ed;
+      --green-screen: #031b0d;
+      --green-text: #39ff14;
+      --shadow: 0 20px 58px rgba(23, 32, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, #eff7f5 0, var(--bg) 390px),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 72px;
+    }
+
+    article {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    header.hero {
+      padding: clamp(28px, 5vw, 56px);
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 12% 14%, rgba(15, 118, 110, 0.14), transparent 28%),
+        radial-gradient(circle at 92% 12%, rgba(37, 99, 235, 0.11), transparent 30%),
+        #ffffff;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 12px;
+      line-height: 1.24;
+    }
+
+    h1 {
+      max-width: 980px;
+      font-size: clamp(2.1rem, 4.4vw, 4rem);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: clamp(1.45rem, 2.3vw, 2.15rem);
+    }
+
+    h3 {
+      font-size: 1.06rem;
+    }
+
+    p,
+    ul,
+    ol {
+      margin: 0 0 16px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    code,
+    kbd {
+      border: 1px solid #d8e0ea;
+      border-radius: 4px;
+      background: #eef2f7;
+      padding: 1px 5px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 0.92em;
+    }
+
+    kbd {
+      display: inline-block;
+      min-width: 1.8em;
+      text-align: center;
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.16);
+      font-weight: 750;
+    }
+
+    pre.code-green {
+      margin: 14px 0 22px;
+      overflow-x: auto;
+      border: 1px solid rgba(57, 255, 20, 0.45);
+      border-radius: 8px;
+      background:
+        linear-gradient(rgba(57, 255, 20, 0.04) 50%, rgba(57, 255, 20, 0.015) 50%),
+        var(--green-screen);
+      background-size: 100% 8px;
+      color: var(--green-text);
+      padding: 16px;
+      text-shadow: 0 0 6px rgba(57, 255, 20, 0.34);
+    }
+
+    pre.code-green code {
+      border: 0;
+      background: transparent;
+      color: inherit;
+      padding: 0;
+      font-family: "IBM Plex Mono", "Courier New", monospace;
+      font-size: 0.9rem;
+    }
+
+    .eyebrow,
+    .section-kicker {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .lede {
+      max-width: 880px;
+      color: var(--muted);
+      font-size: 1.13rem;
+    }
+
+    .content {
+      padding: clamp(22px, 4vw, 48px);
+    }
+
+    .learning-section {
+      scroll-margin-top: 24px;
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .learning-section:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .toc a {
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.84);
+      color: var(--text);
+      padding: 11px;
+      text-decoration: none;
+      font-weight: 750;
+    }
+
+    .toc a span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--muted);
+      padding: 4px 10px;
+      font-size: 0.84rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid.four {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card,
+    .callout,
+    .diagram {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .card {
+      padding: 16px;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .card h3 {
+      margin-bottom: 7px;
+    }
+
+    .callout {
+      margin: 18px 0;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 14px 16px;
+    }
+
+    .callout.warn {
+      border-left-color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .callout.danger {
+      border-left-color: var(--red);
+      background: var(--red-soft);
+    }
+
+    .takeaway {
+      margin-top: 16px;
+      border: 1px solid #b9e3dc;
+      border-radius: 8px;
+      background: var(--teal-soft);
+      color: #0b4f49;
+      padding: 12px 14px;
+      font-weight: 700;
+    }
+
+    .diagram {
+      margin: 16px 0 20px;
+      overflow-x: auto;
+      padding: 16px;
+    }
+
+    .diagram svg {
+      display: block;
+      width: 100%;
+      min-width: 720px;
+      height: auto;
+    }
+
+    .matrix {
+      width: 100%;
+      margin: 16px 0 20px;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+    }
+
+    .matrix th,
+    .matrix td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .matrix th {
+      background: #f4f7fb;
+    }
+
+    .cue {
+      display: inline-block;
+      border: 1px solid #b9e3dc;
+      border-radius: 999px;
+      background: var(--teal-soft);
+      color: #0b4f49;
+      padding: 2px 9px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .tone {
+      display: inline-block;
+      border: 1px solid #e5c26a;
+      border-radius: 999px;
+      background: #fff8df;
+      color: #6b4a00;
+      padding: 2px 8px;
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .step-list {
+      counter-reset: steps;
+      display: grid;
+      gap: 10px;
+      margin: 18px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .step-list li {
+      counter-increment: steps;
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 12px;
+    }
+
+    .step-list li::before {
+      content: counter(steps);
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    .dialogue {
+      display: grid;
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .line {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr);
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 10px 12px;
+    }
+
+    .speaker {
+      color: var(--teal);
+      font-weight: 800;
+    }
+
+    .drill {
+      display: grid;
+      gap: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcff;
+      padding: 16px;
+    }
+
+    .drill-card {
+      min-height: 160px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 18px;
+    }
+
+    .drill-prompt {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+
+    .drill-answer {
+      display: none;
+      margin-top: 12px;
+      border-left: 4px solid var(--teal);
+      background: var(--teal-soft);
+      padding: 10px 12px;
+    }
+
+    .drill.show-answer .drill-answer {
+      display: block;
+    }
+
+    .drill-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    button {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--text);
+      padding: 7px 10px;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .flow {
+      stroke-dasharray: 14 120;
+      animation: flow 3.2s linear infinite;
+    }
+
+    .pulse {
+      animation: pulse 2.2s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    @keyframes flow {
+      from { stroke-dashoffset: 140; opacity: 0.12; }
+      25% { opacity: 1; }
+      to { stroke-dashoffset: 0; opacity: 0.12; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.78; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.035); }
+    }
+
+    .speaker-notes {
+      margin-top: 14px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      padding: 10px 12px;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        width: min(100% - 20px, 1180px);
+        padding-top: 20px;
+      }
+
+      .grid.two,
+      .grid.three,
+      .grid.four,
+      .toc {
+        grid-template-columns: 1fr;
+      }
+
+      .line {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      main {
+        width: 100%;
+        padding: 0;
+      }
+
+      article {
+        border: 0;
+        box-shadow: none;
+      }
+
+      header.hero,
+      .content {
+        padding: 24px;
+      }
+
+      .toc,
+      .drill-actions {
+        display: none;
+      }
+
+      .learning-section[data-slide="true"] {
+        page-break-before: always;
+        min-height: 90vh;
+      }
+
+      .learning-section:first-child {
+        page-break-before: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <header class="hero">
+        <p class="eyebrow">Reusable learning module</p>
+        <h1>Hokkien Starter: Day-to-Day Conversation With Vocal Cues</h1>
+        <p class="lede">
+          This module teaches practical spoken Hokkien for greetings, food, shopping, directions,
+          and conversation repair. It uses learner-friendly vocal cues instead of formal tone marks,
+          because the fastest beginner path is to speak useful chunks aloud and refine them with native audio.
+        </p>
+        <div class="tag-row" aria-label="Topic tags">
+          <span class="tag">Malaysia/Singapore-friendly</span>
+          <span class="tag">Penang-style cues</span>
+          <span class="tag">day-to-day phrases</span>
+          <span class="tag">tone awareness</span>
+          <span class="tag">practice drills</span>
+        </div>
+        <nav class="toc" aria-label="Contents">
+          <a href="#dialect-scope">Scope <span>Which Hokkien?</span></a>
+          <a href="#vocal-cue-system">Vocal Cues <span>How to read aloud</span></a>
+          <a href="#core-survival-phrases">Survival <span>greetings and basics</span></a>
+          <a href="#food-and-shopping">Food <span>hawker and shopping</span></a>
+          <a href="#directions-and-help">Help <span>directions and polite ask</span></a>
+          <a href="#practice-dialogues">Dialogues <span>real conversations</span></a>
+          <a href="#daily-practice-plan">Practice <span>30-day mastery path</span></a>
+          <a href="#drill-lab">Drills <span>active recall</span></a>
+        </nav>
+      </header>
+
+      <div class="content">
+        <section class="learning-section" id="five-w-one-h" data-title="5W1H" data-tags="overview,foundation" data-slide="true">
+          <p class="section-kicker">5W1H</p>
+          <h2>What You Are Learning</h2>
+          <table class="matrix">
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Answer</th>
+                <th>Learning move</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Who?</td>
+                <td>Beginners who want to speak practical Hokkien in Malaysia, Singapore, or with Hokkien-speaking family and friends.</td>
+                <td>Use friendly phrases first; refine dialect details later.</td>
+              </tr>
+              <tr>
+                <td>What?</td>
+                <td>A spoken starter kit: greetings, food, shopping, directions, help, and conversation repair.</td>
+                <td>Learn phrase chunks, not isolated vocabulary.</td>
+              </tr>
+              <tr>
+                <td>When?</td>
+                <td>Day-to-day situations: meeting elders, ordering food, asking price, asking where something is, and saying you do not understand.</td>
+                <td>Practice with real scripts you can reuse today.</td>
+              </tr>
+              <tr>
+                <td>Where?</td>
+                <td>Hawker stalls, coffee shops, markets, family meals, lifts, taxis, and casual chats.</td>
+                <td>Use short, low-risk lines often.</td>
+              </tr>
+              <tr>
+                <td>Why?</td>
+                <td>Hokkien is highly spoken and relationship-driven. A few natural phrases create warmth fast.</td>
+                <td>Prioritize friendliness, rhythm, and repair phrases.</td>
+              </tr>
+              <tr>
+                <td>How?</td>
+                <td>Hear or read a cue, repeat aloud, compare with native audio, use it once in a real conversation, then write the phrase in your own cue spelling.</td>
+                <td>Build mouth memory before grammar perfection.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="takeaway">Simple version: learn useful sentence frames, speak them aloud in rhythm, and keep a personal phrasebook that matches what local speakers actually say.</p>
+        </section>
+
+        <section class="learning-section" id="dialect-scope" data-title="Dialect Scope" data-tags="scope,variation" data-slide="true">
+          <p class="section-kicker">Scope</p>
+          <h2>Which Hokkien Is This?</h2>
+          <div class="grid two">
+            <div class="card">
+              <h3>Default assumption</h3>
+              <p>This module uses a practical Malaysia/Singapore-friendly direction, with many cues close to Penang-style spoken Hokkien.</p>
+            </div>
+            <div class="card">
+              <h3>Why not one universal spelling?</h3>
+              <p>Hokkien pronunciation varies by region. Penang, Singapore, Taiwan, Xiamen/Amoy, and family speech can differ in words, tones, and romanization.</p>
+            </div>
+          </div>
+          <div class="callout warn">
+            <strong>Important:</strong> The vocal cues are not formal POJ or Tai-lo. They are learner cues. If your family or local speaker says a phrase differently, treat the local version as the version to memorize.
+          </div>
+          <table class="matrix">
+            <thead>
+              <tr>
+                <th>Concept</th>
+                <th>Malaysia/Penang-friendly cue</th>
+                <th>Taiwan/POJ-like cue you may also see</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>I</td><td><span class="cue">wah</span></td><td>goa / gua</td></tr>
+              <tr><td>You</td><td><span class="cue">lu</span></td><td>li</td></tr>
+              <tr><td>Eat</td><td><span class="cue">chiak</span> / jiak</td><td>chiah</td></tr>
+              <tr><td>Have or not?</td><td><span class="cue">u boh?</span></td><td>u bo?</td></tr>
+              <tr><td>Thank you</td><td><span class="cue">gam-sia</span></td><td>to-sia / sia-sia may appear in other regions</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="learning-section" id="first-principles" data-title="First Principles" data-tags="foundation,grammar" data-slide="true">
+          <p class="section-kicker">First principles</p>
+          <h2>The Smallest Useful Pieces</h2>
+          <div class="grid four">
+            <div class="card">
+              <h3>Pronouns</h3>
+              <p>`wah` = I/me, `lu` = you, `i` = he/she, `lan` = we/us.</p>
+            </div>
+            <div class="card">
+              <h3>Existence</h3>
+              <p>`u` = have, `boh` = do not have/no, `u boh?` = have or not?</p>
+            </div>
+            <div class="card">
+              <h3>Wanting</h3>
+              <p>`beh` = want, `mai` = do not want. This is the shopping and food engine.</p>
+            </div>
+            <div class="card">
+              <h3>Ability</h3>
+              <p>`e-sai` = can, `boe-sai` = cannot. Use for permission and possibility.</p>
+            </div>
+            <div class="card">
+              <h3>Action verbs</h3>
+              <p>`chiak` = eat, `lim` = drink, `khi` = go, `lai` = come, `kua` = see, `kong` = say.</p>
+            </div>
+            <div class="card">
+              <h3>Questions</h3>
+              <p>`ha-mik?` = what, `toh-loh?` = where, `kui lui?` = how much money?</p>
+            </div>
+            <div class="card">
+              <h3>Particles</h3>
+              <p>`lah`, `ah`, `boh`, `meh` soften, confirm, or add local conversational rhythm.</p>
+            </div>
+            <div class="card">
+              <h3>Repair</h3>
+              <p>`wah m-chai` = I do not know, `wah thia bo` = I do not understand, `koh chi-pai` = one more time.</p>
+            </div>
+          </div>
+          <p class="takeaway">Most beginner conversations can be built from person + want/have/can + object + question/particle.</p>
+        </section>
+
+        <section class="learning-section" id="vocal-cue-system" data-title="Vocal Cue System" data-tags="pronunciation,vocal-cues" data-slide="true">
+          <p class="section-kicker">Vocal cues</p>
+          <h2>How To Read This Module Out Loud</h2>
+          <table class="matrix">
+            <thead>
+              <tr>
+                <th>Cue</th>
+                <th>How to say it</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="cue">hyphen</span></td>
+                <td>Break the phrase into mouth-sized chunks.</td>
+                <td><code>gam-sia</code> = two beats: gam + sia.</td>
+              </tr>
+              <tr>
+                <td><span class="cue">final k / p / t / h</span></td>
+                <td>Clip the sound short. Do not release it strongly like English.</td>
+                <td><code>chiak</code> is a clipped eating word, not "chee-yak-kuh".</td>
+              </tr>
+              <tr>
+                <td><span class="cue">ng</span></td>
+                <td>Use the sound in English "sing".</td>
+                <td><code>kong</code> = say/speak.</td>
+              </tr>
+              <tr>
+                <td><span class="cue">ph / th / kh</span></td>
+                <td>Add a small puff of air.</td>
+                <td><code>khi</code> = go, often with a breathy k.</td>
+              </tr>
+              <tr>
+                <td><span class="tone">listen for contour</span></td>
+                <td>Hokkien is tonal. Phrase tones can shift, so learn whole chunks by sound.</td>
+                <td><code>lu ho boh?</code> should be copied as a rhythm, not as isolated words.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="callout">
+            <strong>Vocal cue method:</strong> say the phrase in three passes: slow syllables, natural speed, then friendly conversation speed. Record yourself once per practice session.
+          </div>
+
+          <h3>Core sound warm-up</h3>
+          <pre class="code-green"><code>wah   lu    i     lan
+u     boh   beh   mai
+chiak lim   khi   lai
+kong  kua   toh-loh  ha-mik
+</code></pre>
+        </section>
+
+        <section class="learning-section slide" id="conversation-block-diagram" data-title="Conversation Block Diagram" data-tags="diagram,grammar" data-slide="true">
+          <p class="section-kicker">Block diagram</p>
+          <h2>Build Conversation With Small Blocks</h2>
+          <figure class="diagram">
+            <svg viewBox="0 0 980 430" role="img" aria-label="Hokkien conversation block diagram">
+              <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"></path>
+                </marker>
+              </defs>
+
+              <rect x="48" y="70" width="150" height="72" rx="12" fill="#eef4ff" stroke="#96b7ff"></rect>
+              <text x="84" y="102" fill="#17202a" font-size="16" font-weight="700">Person</text>
+              <text x="72" y="124" fill="#5f6b7a" font-size="12">wah / lu / i</text>
+
+              <rect x="258" y="70" width="170" height="72" rx="12" fill="#edfbf8" stroke="#8ed5c8"></rect>
+              <text x="306" y="102" fill="#17202a" font-size="16" font-weight="700">Engine</text>
+              <text x="286" y="124" fill="#5f6b7a" font-size="12">beh / u / e-sai</text>
+
+              <rect x="488" y="70" width="170" height="72" rx="12" fill="#fff7df" stroke="#e5c26a"></rect>
+              <text x="530" y="102" fill="#17202a" font-size="16" font-weight="700">Object</text>
+              <text x="518" y="124" fill="#5f6b7a" font-size="12">kopi / mee / lui</text>
+
+              <rect x="718" y="70" width="170" height="72" rx="12" fill="#f6efff" stroke="#d0a2ff"></rect>
+              <text x="758" y="102" fill="#17202a" font-size="16" font-weight="700">Question</text>
+              <text x="752" y="124" fill="#5f6b7a" font-size="12">boh / ha-mik?</text>
+
+              <path d="M198 106 H258" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrow)"></path>
+              <path d="M428 106 H488" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrow)"></path>
+              <path d="M658 106 H718" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrow)"></path>
+              <path class="flow" d="M198 106 H258 H428 H488 H658 H718" stroke="#2563eb" stroke-width="5" fill="none"></path>
+
+              <rect x="80" y="215" width="250" height="70" rx="10" fill="#ffffff" stroke="#dce3ee"></rect>
+              <text x="106" y="244" fill="#17202a" font-size="15" font-weight="700">wah beh kopi</text>
+              <text x="106" y="266" fill="#5f6b7a" font-size="12">I want coffee.</text>
+
+              <rect x="365" y="215" width="250" height="70" rx="10" fill="#ffffff" stroke="#dce3ee"></rect>
+              <text x="391" y="244" fill="#17202a" font-size="15" font-weight="700">lu u lui boh?</text>
+              <text x="391" y="266" fill="#5f6b7a" font-size="12">Do you have money?</text>
+
+              <rect x="650" y="215" width="250" height="70" rx="10" fill="#ffffff" stroke="#dce3ee"></rect>
+              <text x="676" y="244" fill="#17202a" font-size="15" font-weight="700">e-sai mai?</text>
+              <text x="676" y="266" fill="#5f6b7a" font-size="12">Can or not?</text>
+
+              <rect x="160" y="325" width="660" height="54" rx="10" fill="#f7fbff" stroke="#c8d9ee"></rect>
+              <text x="190" y="358" fill="#17202a" font-size="15">Beginner power comes from recombining small blocks, not memorizing hundreds of sentences.</text>
+            </svg>
+            <figcaption>Swap the person, engine, object, and question particle to make many practical sentences.</figcaption>
+          </figure>
+        </section>
+
+        <section class="learning-section" id="pronunciation-sequence" data-title="Pronunciation Practice Sequence" data-tags="sequence,pronunciation" data-slide="true">
+          <p class="section-kicker">Sequence</p>
+          <h2>The Practice Loop For Vocal Cues</h2>
+          <ol class="step-list">
+            <li><div><strong>Read the phrase meaning.</strong><br>Know the social situation first. Do not memorize sounds without context.</div></li>
+            <li><div><strong>Chunk the phrase.</strong><br>Break it into two or three beats: <code>lu ho boh</code>, <code>wah beh kopi</code>.</div></li>
+            <li><div><strong>Say it slowly.</strong><br>Make clipped endings short and keep the rhythm even.</div></li>
+            <li><div><strong>Say it naturally.</strong><br>Make it sound like a friendly phrase, not a spelling exercise.</div></li>
+            <li><div><strong>Compare with a speaker.</strong><br>Use native audio, a family member, or a local speaker. Update your cue spelling to match what you hear.</div></li>
+            <li><div><strong>Use it once.</strong><br>Say the phrase in a low-risk real conversation that day.</div></li>
+          </ol>
+        </section>
+
+        <section class="learning-section" id="core-survival-phrases" data-title="Core Survival Phrases" data-tags="phrases,greetings,survival" data-slide="true">
+          <p class="section-kicker">Survival phrases</p>
+          <h2>Greetings, Politeness, And Basic Response</h2>
+          <table class="matrix">
+            <thead>
+              <tr>
+                <th>English</th>
+                <th>Hokkien cue</th>
+                <th>Vocal cue</th>
+                <th>Use it when...</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>How are you?</td><td><span class="cue">lu ho boh?</span></td><td>loo ho boh</td><td>Friendly greeting.</td></tr>
+              <tr><td>I am fine.</td><td><span class="cue">wah ho</span></td><td>wah ho</td><td>Short reply.</td></tr>
+              <tr><td>Have you eaten?</td><td><span class="cue">lu chiak pa boey?</span></td><td>loo chyahk pah bway</td><td>Warm casual greeting.</td></tr>
+              <tr><td>I ate already.</td><td><span class="cue">chiak liao</span></td><td>chyahk lyow</td><td>Reply to eaten-or-not greeting.</td></tr>
+              <tr><td>Thank you.</td><td><span class="cue">gam-sia</span></td><td>gahm sya</td><td>Singapore/Malaysia-friendly thanks.</td></tr>
+              <tr><td>You are welcome.</td><td><span class="cue">mian kheh-khi</span></td><td>myen kay-khee</td><td>Literally: no need to be formal.</td></tr>
+              <tr><td>Sorry / excuse me.</td><td><span class="cue">pai-seh</span></td><td>pie say</td><td>Apology, getting attention, mild embarrassment.</td></tr>
+              <tr><td>Never mind.</td><td><span class="cue">boh iau-kin</span></td><td>boh yow-keen</td><td>Letting something go.</td></tr>
+              <tr><td>I do not know.</td><td><span class="cue">wah m-chai</span></td><td>wah m-chai</td><td>Knowledge repair.</td></tr>
+              <tr><td>I do not understand.</td><td><span class="cue">wah thia bo</span></td><td>wah tee-ah boh</td><td>Listening repair.</td></tr>
+            </tbody>
+          </table>
+          <p class="takeaway">Start with greetings and repair phrases. They let you enter and survive conversations even before you know many nouns.</p>
+        </section>
+
+        <section class="learning-section" id="food-and-shopping" data-title="Food And Shopping" data-tags="food,shopping,hawker" data-slide="true">
+          <p class="section-kicker">Food and shopping</p>
+          <h2>Hawker Stall And Market Phrases</h2>
+          <table class="matrix">
+            <thead>
+              <tr>
+                <th>English</th>
+                <th>Hokkien cue</th>
+                <th>Vocal cue</th>
+                <th>Pattern</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>I want this.</td><td><span class="cue">wah beh chit-e</span></td><td>wah beh cheet-eh</td><td>wah beh + item</td></tr>
+              <tr><td>I do not want.</td><td><span class="cue">wah mai</span></td><td>wah my</td><td>wah mai + item/action</td></tr>
+              <tr><td>Do you have?</td><td><span class="cue">u boh?</span></td><td>oo boh</td><td>item + u boh?</td></tr>
+              <tr><td>How much?</td><td><span class="cue">kui lui?</span></td><td>kwee loo-ee</td><td>price question</td></tr>
+              <tr><td>Too expensive.</td><td><span class="cue">siunn kui</span></td><td>syoon kwee</td><td>polite price reaction</td></tr>
+              <tr><td>Can be cheaper?</td><td><span class="cue">e-sai khah pan-ghee boh?</span></td><td>eh-sai kah pahn-ghee boh</td><td>soft bargaining</td></tr>
+              <tr><td>I want to eat.</td><td><span class="cue">wah beh chiak</span></td><td>wah beh chyahk</td><td>hungry / ordering frame</td></tr>
+              <tr><td>I want to drink.</td><td><span class="cue">wah beh lim</span></td><td>wah beh leem</td><td>drink frame</td></tr>
+              <tr><td>Take away.</td><td><span class="cue">ta-pau</span></td><td>tah-pow</td><td>Common local loanword.</td></tr>
+              <tr><td>Eat here.</td><td><span class="cue">chiak chia</span></td><td>chyahk chia</td><td>Use locally; some speakers may prefer mixed Malay/English.</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Mini script: ordering kopi</h3>
+          <div class="dialogue">
+            <div class="line"><span class="speaker">You</span><span><strong>wah beh kopi chit-pui</strong><br>I want one cup of coffee.</span></div>
+            <div class="line"><span class="speaker">Stall</span><span><strong>peng eh, sio eh?</strong><br>Iced or hot?</span></div>
+            <div class="line"><span class="speaker">You</span><span><strong>sio eh. gam-sia.</strong><br>Hot one. Thank you.</span></div>
+          </div>
+
+          <div class="callout warn">
+            <strong>Natural speech note:</strong> Malaysian/Singaporean Hokkien often mixes Malay, English, and local food words. That is normal; do not over-purify beginner speech.
+          </div>
+        </section>
+
+        <section class="learning-section" id="directions-and-help" data-title="Directions And Help" data-tags="directions,help,questions" data-slide="true">
+          <p class="section-kicker">Directions and help</p>
+          <h2>Ask Where, What, And Whether You Can</h2>
+          <table class="matrix">
+            <thead>
+              <tr>
+                <th>English</th>
+                <th>Hokkien cue</th>
+                <th>Vocal cue</th>
+                <th>Use it when...</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Where is it?</td><td><span class="cue">toh-loh?</span></td><td>toh-loh</td><td>Pointing/asking location.</td></tr>
+              <tr><td>What is this?</td><td><span class="cue">chit-e si ha-mik?</span></td><td>cheet-eh see hah-meek</td><td>Asking about an object.</td></tr>
+              <tr><td>Can or not?</td><td><span class="cue">e-sai boh?</span></td><td>eh-sai boh</td><td>Permission or possibility.</td></tr>
+              <tr><td>Cannot.</td><td><span class="cue">boe-sai</span></td><td>bway-sai</td><td>Refuse or explain limitation.</td></tr>
+              <tr><td>Please say again.</td><td><span class="cue">koh kong chi-pai</span></td><td>koh gong chee-pie</td><td>Repeat request.</td></tr>
+              <tr><td>Say slowly.</td><td><span class="cue">ban-ban kong</span></td><td>bahn-bahn gong</td><td>Slow down request.</td></tr>
+              <tr><td>I am learning Hokkien.</td><td><span class="cue">wah teh oh Hokkien</span></td><td>wah teh oh hok-kyen</td><td>Lower pressure and invite help.</td></tr>
+              <tr><td>Help me.</td><td><span class="cue">pang-chu wah</span></td><td>pahng-choo wah</td><td>Direct help request.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="learning-section" id="conversation-repair" data-title="Conversation Repair" data-tags="repair,confidence" data-slide="true">
+          <p class="section-kicker">Repair</p>
+          <h2>The Phrases That Keep You In The Conversation</h2>
+          <div class="grid three">
+            <div class="card">
+              <h3>When you did not hear</h3>
+              <p><span class="cue">wah thia bo</span><br>I do not understand / I did not catch it.</p>
+            </div>
+            <div class="card">
+              <h3>When they spoke too fast</h3>
+              <p><span class="cue">ban-ban kong</span><br>Say it slowly.</p>
+            </div>
+            <div class="card">
+              <h3>When you need another try</h3>
+              <p><span class="cue">koh chi-pai</span><br>One more time.</p>
+            </div>
+            <div class="card">
+              <h3>When you do not know</h3>
+              <p><span class="cue">wah m-chai</span><br>I do not know.</p>
+            </div>
+            <div class="card">
+              <h3>When you are still learning</h3>
+              <p><span class="cue">wah teh oh Hokkien</span><br>I am learning Hokkien.</p>
+            </div>
+            <div class="card">
+              <h3>When you want confirmation</h3>
+              <p><span class="cue">si boh?</span><br>Is it? / Really?</p>
+            </div>
+          </div>
+          <p class="takeaway">Conversation repair phrases are more valuable than rare vocabulary. They let native speakers help you.</p>
+        </section>
+
+        <section class="learning-section" id="grammar-patterns" data-title="Grammar Patterns" data-tags="grammar,patterns" data-slide="true">
+          <p class="section-kicker">Patterns</p>
+          <h2>Reusable Sentence Frames</h2>
+          <table class="matrix">
+            <thead>
+              <tr>
+                <th>Frame</th>
+                <th>Meaning</th>
+                <th>Examples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>wah beh + thing/action</code></td>
+                <td>I want...</td>
+                <td>wah beh kopi. wah beh chiak.</td>
+              </tr>
+              <tr>
+                <td><code>wah mai + thing/action</code></td>
+                <td>I do not want...</td>
+                <td>wah mai. wah mai chit-e.</td>
+              </tr>
+              <tr>
+                <td><code>thing + u boh?</code></td>
+                <td>Do you have...?</td>
+                <td>kopi u boh? lui u boh?</td>
+              </tr>
+              <tr>
+                <td><code>e-sai + action + boh?</code></td>
+                <td>Can I / can it...?</td>
+                <td>e-sai lai boh? e-sai khah pan-ghee boh?</td>
+              </tr>
+              <tr>
+                <td><code>chit-e si + what?</code></td>
+                <td>This is...</td>
+                <td>chit-e si ha-mik?</td>
+              </tr>
+              <tr>
+                <td><code>where + toh-loh?</code></td>
+                <td>Where is...?</td>
+                <td>toilet toh-loh? lift toh-loh?</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="takeaway">Memorize sentence frames with slots. Then replace the object instead of rebuilding the sentence each time.</p>
+        </section>
+
+        <section class="learning-section" id="practice-dialogues" data-title="Practice Dialogues" data-tags="dialogue,examples" data-slide="true">
+          <p class="section-kicker">Examples</p>
+          <h2>Three Day-To-Day Dialogues</h2>
+
+          <h3>1. Meeting someone</h3>
+          <div class="dialogue">
+            <div class="line"><span class="speaker">A</span><span><strong>lu ho boh?</strong><br>How are you?</span></div>
+            <div class="line"><span class="speaker">B</span><span><strong>wah ho. lu leh?</strong><br>I am fine. And you?</span></div>
+            <div class="line"><span class="speaker">A</span><span><strong>wah ma ho. gam-sia.</strong><br>I am also fine. Thank you.</span></div>
+          </div>
+
+          <h3>2. Ordering food</h3>
+          <div class="dialogue">
+            <div class="line"><span class="speaker">You</span><span><strong>uncle, wah beh chit-e.</strong><br>Uncle, I want this one.</span></div>
+            <div class="line"><span class="speaker">Stall</span><span><strong>chiak chia ah ta-pau?</strong><br>Eat here or take away?</span></div>
+            <div class="line"><span class="speaker">You</span><span><strong>ta-pau. kui lui?</strong><br>Take away. How much?</span></div>
+            <div class="line"><span class="speaker">Stall</span><span><strong>gorh ringgit.</strong><br>Five ringgit.</span></div>
+          </div>
+
+          <h3>3. Asking for help</h3>
+          <div class="dialogue">
+            <div class="line"><span class="speaker">You</span><span><strong>pai-seh, toilet toh-loh?</strong><br>Excuse me, where is the toilet?</span></div>
+            <div class="line"><span class="speaker">Local</span><span><strong>hit-peng.</strong><br>That side.</span></div>
+            <div class="line"><span class="speaker">You</span><span><strong>gam-sia. wah teh oh Hokkien.</strong><br>Thank you. I am learning Hokkien.</span></div>
+          </div>
+        </section>
+
+        <section class="learning-section" id="daily-practice-plan" data-title="Daily Practice Plan" data-tags="practice,mastery" data-slide="true">
+          <p class="section-kicker">Practice</p>
+          <h2>30-Day Practice Path</h2>
+          <ol class="step-list">
+            <li><div><strong>Days 1-3: Mouth warm-up.</strong><br>Repeat pronouns, want/have/can words, and repair phrases for five minutes daily.</div></li>
+            <li><div><strong>Days 4-7: Greetings.</strong><br>Practice `lu ho boh`, `wah ho`, `lu chiak pa boey`, `gam-sia`, and `mian kheh-khi` until automatic.</div></li>
+            <li><div><strong>Week 2: Food and shopping.</strong><br>Use `wah beh`, `u boh`, `kui lui`, `ta-pau`, and `e-sai boh` with real objects.</div></li>
+            <li><div><strong>Week 3: Repair and confidence.</strong><br>Use `wah thia bo`, `ban-ban kong`, and `koh chi-pai` with a speaker or recording.</div></li>
+            <li><div><strong>Week 4: Real conversations.</strong><br>Have one small Hokkien exchange each day. Write down what the other person actually said.</div></li>
+          </ol>
+
+          <h3>Daily 10-minute drill</h3>
+          <pre class="code-green"><code>2 min  sound warm-up: wah lu u boh beh mai e-sai boe-sai
+3 min  phrase recall: cover English, say Hokkien cue
+2 min  dialogue shadowing: speak one mini dialogue naturally
+2 min  record yourself and compare
+1 min  write one phrase you will use tomorrow
+</code></pre>
+        </section>
+
+        <section class="learning-section" id="drill-lab" data-title="Hokkien Drill Lab" data-tags="interactive,practice,flashcards" data-slide="true">
+          <p class="section-kicker">Interactive drill</p>
+          <h2>Phrase Recall Drill</h2>
+          <p>Read the English prompt, say the Hokkien out loud, then reveal the answer.</p>
+          <div class="drill" id="drill">
+            <div class="drill-card">
+              <p class="drill-prompt" id="drillPrompt">Prompt</p>
+              <h3 id="drillTask">Loading...</h3>
+              <div class="drill-answer" id="drillAnswer">Answer</div>
+            </div>
+            <div class="drill-actions">
+              <button type="button" id="showAnswer">Show answer</button>
+              <button type="button" id="nextDrill">Next drill</button>
+              <button type="button" id="shuffleDrill">Shuffle</button>
+            </div>
+          </div>
+          <p class="takeaway">Do not only read the phrase. Make your mouth produce it from memory.</p>
+        </section>
+
+        <section class="learning-section" id="assembly-notes" data-title="Assembly Notes" data-tags="reuse,presentation" data-slide="false">
+          <p class="section-kicker">Reuse</p>
+          <h2>How To Use This As A Presentation Or Practice Deck</h2>
+          <div class="grid two">
+            <div class="card">
+              <h3>15-minute intro</h3>
+              <p>Use `dialect-scope`, `vocal-cue-system`, `core-survival-phrases`, and `drill-lab`.</p>
+            </div>
+            <div class="card">
+              <h3>Food-focused session</h3>
+              <p>Use `conversation-block-diagram`, `food-and-shopping`, `practice-dialogues`, and `drill-lab`.</p>
+            </div>
+            <div class="card">
+              <h3>Family conversation session</h3>
+              <p>Use `core-survival-phrases`, `conversation-repair`, `grammar-patterns`, and `daily-practice-plan`.</p>
+            </div>
+            <div class="card">
+              <h3>Pronunciation session</h3>
+              <p>Use `vocal-cue-system`, `pronunciation-sequence`, and repeat each cue with native audio.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="learning-section" id="sources" data-title="Sources" data-tags="sources,official-docs" data-slide="false">
+          <p class="section-kicker">Verification</p>
+          <h2>Sources And Listening Follow-Up</h2>
+          <ul>
+            <li><a href="https://www.penang-traveltips.com/hokkien/basic-phrases-2.htm">Basic Phrases in Penang Hokkien</a>: Penang phrase examples with audio and IPA guidance.</li>
+            <li><a href="https://www.penang-traveltips.com/pdf/penang-hokkien.pdf">Penang Hokkien Basics PDF</a>: pronunciation guide for learner spelling, clipped endings, aspiration, and nasal sounds.</li>
+            <li><a href="https://www.learndialect.sg/hokkien-how-do-you-say-thank-you/">LearnDialect.sg Hokkien thank-you lesson</a>: Singapore-focused everyday phrase usage and note that Hokkien pronunciation varies by region.</li>
+            <li><a href="https://english.moe.gov.tw/np-33-1.html">Taiwan Ministry of Education Language Resources</a>: official language resource page linking the Dictionary of Frequently-Used Taiwanese Taigi.</li>
+          </ul>
+          <div class="callout">
+            <strong>Next improvement:</strong> add your own recordings from a local speaker. A self-contained HTML module can later embed local audio clips as base64, but this draft uses text vocal cues only.
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var drills = [
+        {
+          prompt: "Greeting",
+          task: "How do you say: How are you?",
+          answer: "lu ho boh?  Vocal cue: loo ho boh."
+        },
+        {
+          prompt: "Greeting",
+          task: "How do you say: Have you eaten?",
+          answer: "lu chiak pa boey?  Vocal cue: loo chyahk pah bway."
+        },
+        {
+          prompt: "Food",
+          task: "How do you say: I want coffee.",
+          answer: "wah beh kopi."
+        },
+        {
+          prompt: "Shopping",
+          task: "How do you ask: How much?",
+          answer: "kui lui?"
+        },
+        {
+          prompt: "Politeness",
+          task: "How do you say: Thank you.",
+          answer: "gam-sia."
+        },
+        {
+          prompt: "Repair",
+          task: "How do you say: I do not understand.",
+          answer: "wah thia bo."
+        },
+        {
+          prompt: "Repair",
+          task: "How do you ask someone to say it again?",
+          answer: "koh kong chi-pai.  Short cue: koh chi-pai."
+        },
+        {
+          prompt: "Ability",
+          task: "How do you say: Can or not?",
+          answer: "e-sai boh?"
+        },
+        {
+          prompt: "Negative",
+          task: "How do you say: I do not want.",
+          answer: "wah mai."
+        },
+        {
+          prompt: "Location",
+          task: "How do you ask: Where is it?",
+          answer: "toh-loh?"
+        }
+      ];
+
+      var index = 0;
+      var drill = document.getElementById("drill");
+      var prompt = document.getElementById("drillPrompt");
+      var task = document.getElementById("drillTask");
+      var answer = document.getElementById("drillAnswer");
+
+      function render() {
+        var current = drills[index];
+        drill.classList.remove("show-answer");
+        prompt.textContent = current.prompt;
+        task.textContent = current.task;
+        answer.textContent = current.answer;
+      }
+
+      function shuffle() {
+        for (var i = drills.length - 1; i > 0; i -= 1) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = drills[i];
+          drills[i] = drills[j];
+          drills[j] = tmp;
+        }
+        index = 0;
+        render();
+      }
+
+      document.getElementById("showAnswer").addEventListener("click", function () {
+        drill.classList.toggle("show-answer");
+      });
+
+      document.getElementById("nextDrill").addEventListener("click", function () {
+        index = (index + 1) % drills.length;
+        render();
+      });
+
+      document.getElementById("shuffleDrill").addEventListener("click", shuffle);
+
+      render();
+    })();
+  </script>
+</body>
+</html>
